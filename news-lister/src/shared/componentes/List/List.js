@@ -34,12 +34,14 @@ const List = (props) => {
         ))}
       </ul>
       <button
+        className="pagination-button"
         disabled={currentPage === 1}
         onClick={() => handlePagination(currentPage - 1)}
       >
         Prev
       </button>
       <button
+        className="pagination-button"
         disabled={currentPage === pages}
         onClick={() => handlePagination(currentPage + 1)}
       >
